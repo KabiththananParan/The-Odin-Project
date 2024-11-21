@@ -1,10 +1,17 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Roboto";
 }
 
 .header {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    background-color: #1F2937;
+    color: white;
+    padding: 20px 80px;
 }
 
 .header-top {
@@ -28,9 +35,111 @@
 }
 
 .header-bottom {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
 }
 
-.header-bottom-left {
-    
+.header-bottom-left h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.header-bottom-left p {
+    font-size: 18px;
+    margin-bottom: 14px;
+    letter-spacing: 1.6;
+}
+
+.header-bottom-left button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3882F6;
+    color: white;
+}
+
+.header-bottom-right img {
+    border-radius: 15px;
+}
+
+
+.container {
+    margin-top: 20px;
+    /* padding: 20px 80px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.container-img-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.container-img-info img {
+    border-radius: 15px;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+}
+
+.container-center {
+    text-align: left;
+    background-color: #E5E7EB;
+    padding: 20px 80px;
+}
+
+.container-center p {
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+}
+
+.container-center span {
+    font-weight: bolder;
+    float: right;
+}
+
+.container-footer {
+    background-color: #3882F6;
+    color: white;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    border-radius: 10px;
+}
+
+.container-footer button {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    width: 150px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.footer {
+    background-color: #1F2937;
+    color: white;
+    margin-top: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 25px;
 }
