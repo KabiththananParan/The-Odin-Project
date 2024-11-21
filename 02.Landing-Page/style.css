@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top-left p {
+    font-size: 38px;
+}
+
+.header-top-right ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.header-bottom {
+
+}
+
+.header-bottom-left {
+    
+}
