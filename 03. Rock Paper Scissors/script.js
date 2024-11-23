@@ -32,20 +32,18 @@ function getHumanChoice() {
     }
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
 // console.log(getComputerChoice());
 // console.log(getHumanChoice())
-console.log(humanSelection);
-console.log(computerSelection);
+// console.log(humanSelection);
+// console.log(computerSelection);
 
 let humanScore = 0;
 let computerScore = 0;
 
 function playRound(humanSelection, computerSelection) {
     if(humanSelection == computerSelection) {
-        alert("No result!");
+        alert("Draw, No result!");
     }
     else if( humanSelection == "Rock" && computerSelection == "Paper") {
         alert("You lose! Paper beats Rock");
@@ -71,21 +69,28 @@ function playRound(humanSelection, computerSelection) {
         alert("You Win! Scissors beats Paper");
         humanScore++;
     }
-    return humanScore, computerScore;   
 }
 
 function playGame() {
-    for(let i = 1; i <=5; i++) {
-        playRound(humanSelection, computerSelection);
 
-        if(humanScore > computerScore) {
-            alert(`You Wins. Score=> {humanScore} : {computerScore}`);
-        }
-        else if(humanScore == computerScore) {
-            alert(`Game Draw. Score=> {humanScore} : {computerScore}`);
-        }
-        else {
-            alert(`Computer Wins. Score=> {humanScore} : {computerScore}`);
-        }
+    for(let i = 1; i <=5; i++) {
+        alert("Round : " + i);
+
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+
+        playRound(humanSelection, computerSelection);   
+    }
+
+    if(humanScore > computerScore) {
+        alert("You Wins. Score=> " + humanScore + " : " + computerScore);
+    }
+    else if(humanScore == computerScore) {
+        alert("Game Draw. Score=> " + humanScore + " : " + computerScore);
+    }
+    else {
+        alert("Computer Wins. Score=> "  + humanScore + " : " + computerScore);
     }
 }
+
+playGame();
